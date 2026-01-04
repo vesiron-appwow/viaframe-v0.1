@@ -1,0 +1,25 @@
+{
+  "name": "VIAFRAME",
+  "version": "0.1",
+  "purpose": "Reusable instant app chassis for LinxLocal, CarLinx, and future Linx apps",
+  "scope": {
+    "includes": [
+      "layout shell",
+      "navigation structure",
+      "shared utilities",
+      "demo-ready data patterns",
+      "feature toggles"
+    ],
+    "excludes": [
+      "payments",
+      "authentication",
+      "production integrations",
+      "billing",
+      "user accounts"
+    ]
+  },
+  "deployment": {
+    "default": "none",
+    "notes": "Deployment platform intentionally undecided at chassis stage"
+  }
+}
