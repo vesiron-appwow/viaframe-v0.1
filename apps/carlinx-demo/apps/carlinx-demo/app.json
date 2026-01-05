@@ -1,0 +1,33 @@
+{
+  "id": "carlinx-demo",
+  "name": "CarLinx Demo",
+  "type": "asset-market-coordination",
+  "category": "vehicles",
+  "status": "demo",
+  "description": "Structured vehicle sale coordination app supporting staged buyer access without platform-led transactions.",
+  "audience": {
+    "primary": ["private-sellers"],
+    "secondary": ["trade-buyers", "general-buyers"]
+  },
+  "capabilities": [
+    "vehicle-listing",
+    "staged-interest-windows",
+    "buyer-discovery",
+    "direct-party-contact"
+  ],
+  "constraints": {
+    "no-payments": true,
+    "no-escrow": true,
+    "no-platform-negotiation": true,
+    "no-transaction-liability": true
+  },
+  "entry": {
+    "framework": "none",
+    "notes": "Demo definition only. No UI or runtime logic implemented."
+  },
+  "governance": {
+    "listing-owner": "seller",
+    "platform-role": "coordination-only",
+    "transaction-scope": "off-platform"
+  }
+}
