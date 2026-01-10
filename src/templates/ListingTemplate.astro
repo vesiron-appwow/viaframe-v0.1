@@ -1,0 +1,73 @@
+---
+import Layout from "../layouts/Layout.astro";
+import HeroImage from "../components/HeroImage.astro";
+import PrimaryHeader from "../components/PrimaryHeader.astro";
+import InfoCard from "../components/InfoCard.astro";
+import FooterBackLink from "../components/FooterBackLink.astro";
+
+const { data, maxWidth = 760 } = Astro.props;
+---
+
+<Layout title={data.header.title}>
+  <main style={`
+    max-width: ${maxWidth}px;
+    margin: 0 auto;
+    padding: 1.75rem 1.25rem;
+    line-height: 1.6;
+  `}>
+
+    <HeroImage
+      src={data.hero.src}
+      alt={data.hero.alt}
+      height={data.hero.height}
+    />
+
+    <PrimaryHeader
+      title={data.header.title}
+      subtitle={data.header.subtitle}
+      actionLabel={data.header.actionLabel}
+      actionMessage={data.header.actionMessage}
+    />
+
+    {data.cards?.map(card => (
+  <InfoCard title={card.title}>
+    {card.lines && (
+      <ul>
+        {card.lines.map(line => (
+          <li>{line}</li>
+        ))}
+      </ul>
+    )}
+  </InfoCard>
+))}
+
+{data.sections?.map(section => (
+  <section style="margin-bottom: 1.5rem;">
+    <h2>{section.title}</h2>
+
+    {section.lines && (
+      <p>
+        {section.lines.map((line, i) => (
+          <span>
+            {line}
+            {i < section.lines.length - 1 && <br />}
+          </span>
+        ))}
+      </p>
+    )}
+
+    {section.items && (
+      <ul>
+        {section.items.map(item => (
+          <li>{item}</li>
+        ))}
+      </ul>
+    )}
+  </section>
+))}
+
+
+    <FooterBackLink />
+
+  </main>
+</Layout>

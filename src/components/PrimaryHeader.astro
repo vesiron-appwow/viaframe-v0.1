@@ -1,0 +1,35 @@
+---
+const {
+  title,
+  subtitle,
+  actionLabel,
+  actionMessage
+} = Astro.props;
+---
+
+<header style="margin-bottom: 1.25rem;">
+  <h1 style="margin: 0 0 0.25rem 0;">{title}</h1>
+
+  {subtitle && (
+    <p style="margin: 0 0 0.75rem 0; color: #666;">
+      {subtitle}
+    </p>
+  )}
+
+  {actionLabel && (
+    <button
+      style="
+        padding: 0.6rem 1rem;
+        font-size: 0.95rem;
+        border: none;
+        border-radius: 6px;
+        background: #222;
+        color: #fff;
+        cursor: pointer;
+      "
+      onclick={`alert('${actionMessage || "Coming soon"}')`}
+    >
+      {actionLabel}
+    </button>
+  )}
+</header>

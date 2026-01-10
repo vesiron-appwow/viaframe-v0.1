@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "src": "/images/car-hero.jpg",
+    "alt": "Vehicle exterior",
+    "height": 260
+  },
+  "header": {
+    "title": "2019 Ford Focus Titanium",
+    "subtitle": "1.0 EcoBoost · Manual · Petrol",
+    "actionLabel": "Make an offer",
+    "actionMessage": "Offer system coming soon"
+  },
+  "cards": [
+    {
+      "title": "Vehicle details",
+      "lines": [
+        "Price: £8,950",
+        "Mileage: 42,000 miles",
+        "Year: 2019",
+        "Fuel: Petrol",
+        "Transmission: Manual"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Description",
+      "lines": [
+        "Well-maintained Ford Focus in excellent condition.",
+        "Smooth drive and economical engine."
+      ]
+    },
+    {
+      "title": "Why buy with CarLinx?",
+      "items": [
+        "Transparent vehicle listings",
+        "No hidden fees",
+        "Direct contact with the seller"
+      ]
+    }
+  ]
+}

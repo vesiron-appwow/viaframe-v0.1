@@ -1,0 +1,109 @@
+---
+import Layout from "../../layouts/Layout.astro";
+---
+
+<Layout title="Submit an Instant App">
+  <main style="
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 2rem 1.25rem;
+    line-height: 1.6;
+  ">
+
+    <h1>Submit an Instant App</h1>
+
+    <p>
+      AppWow Instant Apps are lightweight, fast, and purpose-built.
+      Submit your details below and we’ll prepare a demo listing for you.
+    </p>
+
+    <hr style="margin: 1.5rem 0;" />
+
+    <form onsubmit="return false;" style="margin-bottom: 2rem;">
+
+      <label>
+        <strong>Your name</strong><br />
+        <input type="text" placeholder="Jane Smith" style="width:100%;padding:0.5rem;" />
+      </label><br /><br />
+
+      <label>
+        <strong>Email address</strong><br />
+        <input type="email" placeholder="you@example.com" style="width:100%;padding:0.5rem;" />
+      </label><br /><br />
+
+      <label>
+        <strong>Instant App type</strong><br />
+        <select style="width:100%;padding:0.5rem;">
+          <option>LinxLocal (local business)</option>
+          <option>CarLinx (vehicle)</option>
+          <option>HomeLinx (property)</option>
+          <option>Other</option>
+        </select>
+      </label><br /><br />
+
+      <label>
+        <strong>Listing title</strong><br />
+        <input type="text" placeholder="e.g. The Corner Café" style="width:100%;padding:0.5rem;" />
+      </label><br /><br />
+
+      <button
+        style="
+          padding: 0.6rem 1rem;
+          font-size: 1rem;
+          border: none;
+          border-radius: 6px;
+          background: #222;
+          color: #fff;
+          cursor: pointer;
+        "
+        onclick="document.getElementById('json-output').style.display='block';"
+      >
+        Generate preview
+      </button>
+    </form>
+
+    <hr style="margin: 1.5rem 0;" />
+
+    <section id="json-output" style="display:none;">
+      <h2>Your Instant App data (example)</h2>
+
+      <p>
+        This is the structure we use internally. In a live system,
+        this would be created automatically.
+      </p>
+
+      <pre style="
+        background:#f7f7f7;
+        padding:1rem;
+        overflow:auto;
+        border-radius:6px;
+      ">
+<pre style="
+  background:#f7f7f7;
+  padding:1rem;
+  overflow:auto;
+  border-radius:6px;
+">
+{`{
+  "hero": {
+    "src": "/images/your-image.jpg",
+    "alt": "Your listing image",
+    "height": 240
+  },
+  "header": {
+    "title": "Your listing title",
+    "subtitle": "Short description",
+    "actionLabel": "Primary action",
+    "actionMessage": "Coming soon"
+  }
+}`}
+</pre>
+
+    </section>
+
+    <footer style="margin-top: 2rem;">
+      <a href="/">← Back to AppWow</a>
+    </footer>
+
+  </main>
+</Layout>

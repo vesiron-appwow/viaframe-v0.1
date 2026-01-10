@@ -1,0 +1,41 @@
+{
+  "hero": {
+    "src": "/images/home-hero.jpg",
+    "alt": "Modern two-bedroom apartment",
+    "height": 260
+  },
+  "header": {
+    "title": "Modern 2-Bed Apartment",
+    "subtitle": "Brighton · £1,350 pcm",
+    "actionLabel": "Request viewing",
+    "actionMessage": "Viewing requests coming soon"
+  },
+  "cards": [
+    {
+      "title": "Property details",
+      "lines": [
+        "Bedrooms: 2",
+        "Bathrooms: 1",
+        "Furnished: Part-furnished",
+        "Available: Immediate"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Description",
+      "lines": [
+        "Well-presented two-bedroom apartment close to amenities.",
+        "Ideal for professionals."
+      ]
+    },
+    {
+      "title": "Why HomeLinx?",
+      "items": [
+        "No tenant fees",
+        "Direct landlord contact",
+        "Clear, verified listings"
+      ]
+    }
+  ]
+}

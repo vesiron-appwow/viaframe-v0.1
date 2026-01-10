@@ -1,0 +1,42 @@
+{
+  "hero": {
+    "src": "/images/cafe-hero.jpg",
+    "alt": "The Corner Café interior",
+    "height": 220
+  },
+  "header": {
+    "title": "The Corner Café",
+    "subtitle": "Independent coffee & light bites · Open daily",
+    "actionLabel": "Order ahead",
+    "actionMessage": "Order ahead coming soon"
+  },
+  "cards": [
+    {
+      "title": "Today’s Special",
+      "lines": [
+        "Homemade vegetable soup & sourdough",
+        "Served until sold out · £6.50"
+      ]
+    }
+  ],
+  "sections": [
+    {
+      "title": "Visit Us",
+      "lines": [
+        "12 Market Street",
+        "Brighton, BN1",
+        "Mon–Fri: 8am – 4pm",
+        "Sat–Sun: 9am – 3pm"
+      ]
+    },
+    {
+      "title": "Menu Highlights",
+      "items": [
+        "Freshly brewed coffee",
+        "Specialty teas",
+        "Breakfast pastries",
+        "Sandwiches & light lunches"
+      ]
+    }
+  ]
+}
