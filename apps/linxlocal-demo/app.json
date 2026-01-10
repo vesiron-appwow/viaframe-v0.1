@@ -1,0 +1,11 @@
+{
+  "id": "linxlocal-demo",
+  "name": "LinxLocal Demo",
+  "type": "demo",
+  "status": "placeholder",
+  "description": "First VIAFRAME demo app for LinxLocal",
+  "entry": {
+    "framework": "none",
+    "notes": "No framework integration yet"
+  }
+}
